@@ -8,7 +8,7 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "deploy": "gh-pages"    
+    "deploy": "gh-pages -d dist"    
   },
   "repository": {
     "type": "git",
