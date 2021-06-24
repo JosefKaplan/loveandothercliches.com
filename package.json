@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  },
+  "name": "loveandothercliches.com",
+  "description": "echo # loveandothercliches",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "deploy": "gh-pages -d ./"    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosefKaplan/loveandothercliches.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosefKaplan/loveandothercliches.com/issues"
+  },
+  "homepage": "https://github.com/JosefKaplan/loveandothercliches.com"
+}
