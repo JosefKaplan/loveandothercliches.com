@@ -84,6 +84,10 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+header {
+  margin-bottom: 0!important;
+}
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
@@ -112,9 +116,7 @@ b strong {
 body {
   margin: 0;
   font-family: cass-regular,"Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.5rem;
-  font-weight: 400;
-  line-height: 1.5;
+  font-size: 1em;
   color: #212529;
   text-align: left;
   background-color: #fff;
@@ -137,7 +139,15 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
+}
+
+.marginless {
+  margin: 0.3em!important;
+}
+
+.margin-bottom {
+  margin-bottom: 1.5em!important;
 }
 
 abbr[title],
@@ -10286,7 +10296,6 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
   background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
 }
 .about-section p {
