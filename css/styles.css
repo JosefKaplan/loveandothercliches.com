@@ -29,6 +29,20 @@
 font-family: cass-light!important;
 }
 
+.disable-select{
+  user-select:none;
+  font-size: 1!important;
+  font-family: Sans;
+  color: rgba(0, 0, 0, 0)
+}
+.disabled {
+  overflow: hidden;
+  border:none;
+  margin: none;
+  padding: none;
+  height: 1em;
+  width: 100%;
+}
 
 .navbar .nav-item .dropdown-menu{ display: none; }¨
 
