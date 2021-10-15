@@ -44,8 +44,7 @@ font-family: cass-light!important;
   width: 100%;
 }
 
-.navbar .nav-item .dropdown-menu{ display: none; }¨
-
+.navbar .nav-item .dropdown-menu{ display: none; }
 
 
 .navbar .nav-item:hover .nav-link{  background-color: none}
@@ -548,7 +547,7 @@ mark,
 .img-fluid {
   max-width: 100%;
   min-height: 200px;
-  object-fit: cover;
+  object-fit: contain;
   overflow: hidden;
 }
 
