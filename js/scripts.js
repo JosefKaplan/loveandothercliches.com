@@ -94,3 +94,4 @@ anime.timeline({loop: false})
     duration: T*4,
     delay: 4*T-T
     });
+
