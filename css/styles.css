@@ -102,6 +102,14 @@ header {
   margin-bottom: 0!important;
 }
 
+.thumbnail:not(:hover){
+  transition:1s;
+}
+.thumbnail:hover{
+  opacity:50%;
+  transition:1s;
+}
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
