@@ -33,7 +33,9 @@ font-weight: 600;
 .my-0:hover{
   cursor:default;
 }
-
+.space {
+  height:12rem;
+}
 .disable-select{
   user-select:none;
   font-size: 1!important;
