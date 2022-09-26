@@ -57,7 +57,7 @@
 
 //ANIMATION
 // Wrap every letter in a span
-let T = 700;
+let T = 600;
 let firstText = document.getElementById("firstText");
 anime.timeline({loop: false})
   .add({
@@ -67,7 +67,7 @@ anime.timeline({loop: false})
   duration: T*1,
   delay: 500
   });
-  let secondText = document.getElementById("secondText");
+let secondText = document.getElementById("secondText");
 anime.timeline({loop: false})
   .add({
   targets: '.secondText',
@@ -76,7 +76,7 @@ anime.timeline({loop: false})
   duration: T*2,
   delay: 2*T-T
   });
-  let thirdText = document.getElementById("thirdText");
+let thirdText = document.getElementById("thirdText");
 anime.timeline({loop: false})
   .add({
   targets: '.thirdText',
@@ -85,13 +85,30 @@ anime.timeline({loop: false})
   duration: T*3,
   delay: 3*T-T
   });
-  let fourthText = document.getElementById("fourthText");
-  anime.timeline({loop: false})
-    .add({
-    targets: '.fourthText',
-    opacity: [0,1],
-    easing: "easeInOutQuad",
-    duration: T*4,
-    delay: 4*T-T
-    });
-
+let fourthText = document.getElementById("fourthText");
+anime.timeline({loop: false})
+  .add({
+  targets: '.fourthText',
+  opacity: [0,1],
+  easing: "easeInOutQuad",
+  duration: T*4,
+  delay: 4*T-T
+  });
+let fifthText = document.getElementById("fifthText");
+anime.timeline({loop: false})
+  .add({
+  targets: '.fifthText',
+  opacity: [0,1],
+  easing: "easeInOutQuad",
+  duration: T*4,
+  delay: 5*T-T
+  });
+let sixthText = document.getElementById("sixthText");
+anime.timeline({loop: false})
+  .add({
+  targets: '.sixthText',
+  opacity: [0,1],
+  easing: "easeInOutQuad",
+  duration: T*4,
+  delay: 6*T-T
+  });
