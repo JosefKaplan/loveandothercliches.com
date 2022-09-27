@@ -30,6 +30,11 @@ font-family: cass-light!important;
 font-weight: 600;
 }
 
+.text-no-pointer:hover {
+  cursor:default;
+  color: #64a19d;
+}
+
 .my-0:hover{
   cursor:default;
 }
@@ -54,7 +59,9 @@ font-weight: 600;
 
 
 .navbar .nav-item .dropdown-menu{ display: none; }
-
+.navbar-item {
+  font-size:larger;
+}
 
 .navbar .nav-item:hover .nav-link{  background-color: none}
 
@@ -4142,6 +4149,7 @@ input[type=button].btn-block {
 }
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
+  opacity:1;
 }
 
 .navbar-nav {
