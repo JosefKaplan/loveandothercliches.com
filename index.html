@@ -28,6 +28,11 @@
         <link href="./css/lightbox.min.css" type="text/css" rel="stylesheet">
         <!--Google Recaptcha v2-->
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script>
+            function onSubmit(token) {
+              document.getElementById("poslimail").submit();
+            }
+          </script>
         <!-- Global site tag (gtag.js) - Google Analytics(Smartlook) LAOC-->
         <script type='text/javascript'>
             window.smartlook||(function(d) {
@@ -483,19 +488,21 @@
                             <i class="far fa-paper-plane fa-2x mb-3 text-white"></i>
                             <p class="mb-3 fa-2x text-white">Contact us</p>
                                     <!-- modify this form HTML and place wherever you want your form (comment from: FORMSPREE FORM) -->
+                                    <!--action="https://formspree.io/f/xyylkzoy"-->
                                 <form
                                     action="https://formspree.io/f/xyylkzoy"
                                     method="POST"
+                                    id="poslimail"
                                     >
                                     <input placeholder="Enter email address..." class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" type="email" name="email">
                                     <textarea placeholder="Write your message..." class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" name="message"></textarea>
                                     <br>
                                     <div class="row">
                                             <div class="col-sm">
-                                                <div class="g-recaptcha" data-sitekey="6LdEARgjAAAAAHfzoPUBrQNl5tm2lchtXJnq8IKQ"></div>
+                                                <div class="g-recaptcha" id="rcaptcha" data-sitekey="6LdEARgjAAAAAHfzoPUBrQNl5tm2lchtXJnq8IKQ"></div>
                                             </div>
                                             <div class="col-mx-auto">
-                                                <button class="btn btn-primary" type="submit">Send</button>
+                                                <button class="btn btn-primary g-recaptcha" data-callback="onSubmit" type="submit">Send</button>
                                             </div>
                                     </div>
                                 </form>
