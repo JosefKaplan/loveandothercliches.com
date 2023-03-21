@@ -4,6 +4,12 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
     */
+   
+//RECAPTCHA
+function onSubmit(token) {
+    document.getElementById("poslimail").submit();
+  }
+  
 
 
     (function ($) {
@@ -57,24 +63,9 @@
     $(window).scroll(navbarCollapse);
 })(jQuery); // End of use strict
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //ANIMATION
 // Wrap every letter in a span
-let T = 600;
+let T = 600; //tady nastavuju čas pro celou sekvenci
 let firstText = document.getElementById("firstText");
 anime.timeline({loop: false})
   .add({

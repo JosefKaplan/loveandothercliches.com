@@ -28,11 +28,6 @@
         <link href="./css/lightbox.min.css" type="text/css" rel="stylesheet">
         <!--Google Recaptcha v2-->
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-        <script>
-            function onSubmit(token) {
-              document.getElementById("poslimail").submit();
-            }
-          </script>
         <!-- Global site tag (gtag.js) - Google Analytics(Smartlook) LAOC-->
         <script type='text/javascript'>
             window.smartlook||(function(d) {
@@ -545,6 +540,7 @@
                                     >
                                     <input placeholder="Enter email address..." class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" type="email" name="email">
                                     <textarea placeholder="Write your message..." class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" name="message"></textarea>
+                                    <div class="g-recaptcha" data-sitekey="6LdVXRwlAAAAAL2jkeNVD_3gKXe1lUmBdDJ0PArU"></div>
                                     <br>
                                     
                                             <!--<div class="col-sm">
