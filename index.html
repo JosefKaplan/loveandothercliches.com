@@ -26,8 +26,6 @@
         <!--Lightbox-->
         <script src="./js/lightbox-plus-jquery.min.js"></script>
         <link href="./css/lightbox.min.css" type="text/css" rel="stylesheet">
-        <!--Google Recaptcha v2-->
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <!-- Global site tag (gtag.js) - Google Analytics(Smartlook) LAOC-->
         <script type='text/javascript'>
             window.smartlook||(function(d) {
@@ -536,29 +534,9 @@
                                     <form action="https://formspree.io/f/xyylkzoy" method="POST" id="myForm">
                                         <input placeholder="Enter email address..." class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" type="email" name="email">
                                         <textarea placeholder="Write your message..." class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" name="message"></textarea>
-                                        <div class="g-recaptcha" data-sitekey="6LcpbBwlAAAAAMdieB3KFEcGVygsdgJkjNEW3c7H"></div>
-                                        <button class="btn btn-primary" type="submit">
+                                        <button class="btn btn-primary" type="submit" id="BTN">
                                             Send
                                         </button>
-                                    
-                                      <!-- Add the onSubmit function to submit the form if the challenge is successful -->
-                                      <script>
-                                        function onSubmit(token) {
-                                          // Get a reference to the form
-                                          const form = document.querySelector('myForm');
-                                          
-                                          // Check if the reCAPTCHA test is passed
-                                          if (token) {
-                                            // If the test is passed, submit the form
-                                            form.submit();
-                                            console.log('potvrzeno odesláno');
-                                          } else {
-                                            // If the test is not passed, display an error message
-                                            alert('Please complete the reCAPTCHA test to submit the form.');
-                                            console.log('neodesláno')
-                                          }
-                                        }
-                                      </script>
                                     </form>
                         </div>
                                       
