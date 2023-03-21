@@ -533,24 +533,17 @@
                             <p class="mb-3 fa-2x text-white">Contact us</p>
                                     <!-- modify this form HTML and place wherever you want your form (comment from: FORMSPREE FORM) -->
                                     <!--action="https://formspree.io/f/xyylkzoy"-->
-                                <form
-                                    action="https://formspree.io/f/xyylkzoy"
-                                    method="POST"
-                                    id="poslimail"
-                                    >
-                                    <input placeholder="Enter email address..." class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" type="email" name="email">
-                                    <textarea placeholder="Write your message..." class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" name="message"></textarea>
-                                    <div class="g-recaptcha" data-sitekey="6LcpbBwlAAAAAMdieB3KFEcGVygsdgJkjNEW3c7H"></div>
-                                    <br>
-                                    
-                                            <!--<div class="col-sm">
-                                                <div class="g-recaptcha" id="rcaptcha" data-sitekey="6LdEARgjAAAAAHfzoPUBrQNl5tm2lchtXJnq8IKQ"></div>
-                                            </div>-->
-                                            <div class="col-mx-center">
-                                                <button class="btn btn-primary g-recaptcha" data-callback="onSubmit" type="submit">Send</button>
-                                            </div>
-                                    
-                                </form>
+                                    <form action="https://formspree.io/f/xyylkzoy" method="POST">
+                                        <input placeholder="Enter email address..." class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" type="email" name="email">
+                                        <textarea placeholder="Write your message..." class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" name="message"></textarea>
+                                        <div class="g-recaptcha" data-sitekey="6LcpbBwlAAAAAMdieB3KFEcGVygsdgJkjNEW3c7H"></div>
+                                        <button class="btn btn-primary g-recaptcha" data-callback="onSubmit" type="submit">Send</button>
+                                      </form>
+                                      <script>
+                                        function onSubmit(token) {
+                                          document.querySelector('form').submit();
+                                        }
+                                      </script>
                         </div>
                     </div>
                 </div>
