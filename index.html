@@ -533,15 +533,27 @@
                             <p class="mb-3 fa-2x text-white">Contact us</p>
                                     <!-- modify this form HTML and place wherever you want your form (comment from: FORMSPREE FORM) -->
                                     <!--action="https://formspree.io/f/xyylkzoy"-->
-                                    <form action="https://formspree.io/f/xyylkzoy" method="POST">
+                                    <form action="https://formspree.io/f/xyylkzoy" method="POST" id="myForm">
                                         <input placeholder="Enter email address..." class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" type="email" name="email">
                                         <textarea placeholder="Write your message..." class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" name="message"></textarea>
                                         <div class="g-recaptcha" data-sitekey="6LcpbBwlAAAAAMdieB3KFEcGVygsdgJkjNEW3c7H"></div>
-                                        <button class="btn btn-primary g-recaptcha" data-callback="onSubmit" type="submit">Send</button>
+                                        <button class="btn btn-primary" type="submit">Send</button>
                                       </form>
+                                      
+                                      <!-- Add the onSubmit function to submit the form if the challenge is successful -->
                                       <script>
                                         function onSubmit(token) {
-                                          document.querySelector('form').submit();
+                                          // Get a reference to the form
+                                          const form = document.querySelector('#myForm');
+                                          
+                                          // Check if the reCAPTCHA test is passed
+                                          if (token) {
+                                            // If the test is passed, submit the form
+                                            form.submit();
+                                          } else {
+                                            // If the test is not passed, display an error message
+                                            alert('Please complete the reCAPTCHA test to submit the form.');
+                                          }
                                         }
                                       </script>
                         </div>

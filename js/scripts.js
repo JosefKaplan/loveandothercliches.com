@@ -5,6 +5,8 @@
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-grayscale/blob/master/LICENSE)
     */
 
+
+
     (function ($) {
     "use strict"; // Start of use strict
     // Smooth scrolling using jQuery easing
