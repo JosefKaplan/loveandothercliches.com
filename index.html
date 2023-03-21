@@ -537,26 +537,32 @@
                                         <input placeholder="Enter email address..." class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" type="email" name="email">
                                         <textarea placeholder="Write your message..." class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" name="message"></textarea>
                                         <div class="g-recaptcha" data-sitekey="6LcpbBwlAAAAAMdieB3KFEcGVygsdgJkjNEW3c7H"></div>
-                                        <button class="btn btn-primary" type="submit">Send</button>
-                                      </form>
-                                      
+                                        <button class="btn btn-primary" type="submit">
+                                            Send
+                                        </button>
+                                    
                                       <!-- Add the onSubmit function to submit the form if the challenge is successful -->
                                       <script>
                                         function onSubmit(token) {
                                           // Get a reference to the form
-                                          const form = document.querySelector('#myForm');
+                                          const form = document.querySelector('myForm');
                                           
                                           // Check if the reCAPTCHA test is passed
                                           if (token) {
                                             // If the test is passed, submit the form
                                             form.submit();
+                                            console.log('potvrzeno odesláno');
                                           } else {
                                             // If the test is not passed, display an error message
                                             alert('Please complete the reCAPTCHA test to submit the form.');
+                                            console.log('neodesláno')
                                           }
                                         }
                                       </script>
+                                    </form>
                         </div>
+                                      
+  
                     </div>
                 </div>
             </section>
