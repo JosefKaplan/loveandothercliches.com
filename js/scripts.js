@@ -117,8 +117,7 @@ anime.timeline({loop: false})
 
 
 //Logo animations
-const path1 = document.getElementsByClassName("path1")
-anime.timeline({loop: false})
-  .add({
-    targets: '.path1',
-  });
+//const path1 = document.getElementsByClassName("path1")
+//anime.timeline({loop: false})
+//  .add({//  targets: '.path1',
+//  });//
