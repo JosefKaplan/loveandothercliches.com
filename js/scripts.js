@@ -6,7 +6,6 @@
     */
 
 
-
     (function ($) {
     "use strict"; // Start of use strict
     // Smooth scrolling using jQuery easing
@@ -114,4 +113,12 @@ anime.timeline({loop: false})
   easing: "easeInOutQuad",
   duration: T*4,
   delay: 6*T-T
+  });
+
+
+//Logo animations
+const path1 = document.getElementsByClassName("path1")
+anime.timeline({loop: false})
+  .add({
+    targets: '.path1',
   });
