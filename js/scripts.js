@@ -67,7 +67,7 @@ anime.timeline({loop: false})
   opacity: [0,1],
   easing: "easeInOutQuad",
   duration: T*1,
-  delay: 500
+  delay: 500,
   });
 let secondText = document.getElementById("secondText");
 anime.timeline({loop: false})
@@ -76,7 +76,7 @@ anime.timeline({loop: false})
   opacity: [0,1],
   easing: "easeInOutQuad",
   duration: T*2,
-  delay: T
+  delay: T,
   });
 let thirdText = document.getElementById("thirdText");
 anime.timeline({loop: false})
@@ -85,7 +85,7 @@ anime.timeline({loop: false})
   opacity: [0,1],
   easing: "easeInOutQuad",
   duration: T*3,
-  delay: 2*T
+  delay: 2*T,
   });
 let fourthText = document.getElementById("fourthText");
 anime.timeline({loop: false})
@@ -94,7 +94,7 @@ anime.timeline({loop: false})
   opacity: [0,1],
   easing: "easeInOutQuad",
   duration: T*4,
-  delay: 3*T
+  delay: 3*T,
   });
 let fifthText = document.getElementById("fifthText");
 anime.timeline({loop: false})
@@ -103,7 +103,7 @@ anime.timeline({loop: false})
   opacity: [0,1],
   easing: "easeInOutQuad",
   duration: T*4,
-  delay: 3*T
+  delay: 3*T,
   });
 let sixthText = document.getElementById("sixthText");
 anime.timeline({loop: false})
@@ -112,7 +112,7 @@ anime.timeline({loop: false})
   opacity: [0,1],
   easing: "easeInOutQuad",
   duration: T*5,
-  delay: 4*T
+  delay: 4*T,
   });
 
 
@@ -125,28 +125,43 @@ anime.timeline({loop: false})
   anime.timeline({loop: false})
     .add({
       targets: '.pathsAll .path1 .path2 .path3 .path4',
+      easing: 'easeInOutQuad',
+      duration: 0,
+      translateX: -200,
+    })
+    .add({
+      targets: '.pathsAll .path1 .path2 .path3 .path4',
+      easing: 'easeInOutQuad',
       duration: T,
-      delay: T,
-      scale: 1,
-      opacity: [1,0] //THIS IS A TEST
+      delay: 5*T,
+      translateX: 0,
     });
+
 
   anime.timeline({loop: true})
     .add({
       targets: '.path3',
       easing: 'easeInOutQuad',
-      duration: 0.3*T,
-      delay: 6*T,
+      duration: 0.8*T,
+      delay: 15*T,
       opacity: 0.5,
-      scale: 1.3,
-      translateX: -10,
-      translateY: -10,
+      scale: 1.2,
+      translateX: -20,
+      translateY: -15,
     })
     .add({
       targets: '.path3',
       easing: 'easeInOutQuad',
-      duration: 0.3*T,
-      delay: 0.3*T,
+      duration: 0.8*T,
+      opacity: 1,
+      scale: 0.9,
+      translateX: 15,
+      translateY: 10,
+    })
+    .add({
+      targets: '.path3',
+      easing: 'easeInOutQuad',
+      duration: 0.8*T,
       opacity: 1,
       scale: 1,
       translateX: 0,
