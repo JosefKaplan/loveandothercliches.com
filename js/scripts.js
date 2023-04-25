@@ -146,8 +146,8 @@ anime.timeline({loop: false})
       delay: 15*T,
       opacity: 0.5,
       scale: 1.2,
-      translateX: -20,
-      translateY: -15,
+      translateX: -15,
+      translateY: -10,
     })
     .add({
       targets: '.path3',
