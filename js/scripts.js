@@ -76,7 +76,7 @@ anime.timeline({loop: false})
   opacity: [0,1],
   easing: "easeInOutQuad",
   duration: T*2,
-  delay: 2*T-T
+  delay: T
   });
 let thirdText = document.getElementById("thirdText");
 anime.timeline({loop: false})
@@ -85,7 +85,7 @@ anime.timeline({loop: false})
   opacity: [0,1],
   easing: "easeInOutQuad",
   duration: T*3,
-  delay: 3*T-T
+  delay: 2*T
   });
 let fourthText = document.getElementById("fourthText");
 anime.timeline({loop: false})
@@ -94,7 +94,7 @@ anime.timeline({loop: false})
   opacity: [0,1],
   easing: "easeInOutQuad",
   duration: T*4,
-  delay: 4*T-T
+  delay: 3*T
   });
 let fifthText = document.getElementById("fifthText");
 anime.timeline({loop: false})
@@ -103,7 +103,7 @@ anime.timeline({loop: false})
   opacity: [0,1],
   easing: "easeInOutQuad",
   duration: T*4,
-  delay: 5*T-T
+  delay: 3*T
   });
 let sixthText = document.getElementById("sixthText");
 anime.timeline({loop: false})
@@ -111,13 +111,47 @@ anime.timeline({loop: false})
   targets: '.sixthText',
   opacity: [0,1],
   easing: "easeInOutQuad",
-  duration: T*4,
-  delay: 6*T-T
+  duration: T*5,
+  delay: 4*T
   });
 
 
 //Logo animations
-//const path1 = document.getElementsByClassName("path1")
-//anime.timeline({loop: false})
-//  .add({//  targets: '.path1',
-//  });//
+  const pathsAll = document.getElementsByClassName("pathsAll");
+  const path1 = document.getElementsByClassName("path1");
+  const path2 = document.getElementsByClassName("path2");
+  const path3 = document.getElementsByClassName("path3");
+  const path4 = document.getElementsByClassName("path4");
+  anime.timeline({loop: false})
+    .add({
+      targets: '.pathsAll .path1 .path2 .path3 .path4',
+      duration: T,
+      delay: T,
+      scale: 1,
+      opacity: [1,0] //THIS IS A TEST
+    });
+
+  anime.timeline({loop: true})
+    .add({
+      targets: '.path3',
+      easing: 'easeInOutQuad',
+      duration: 0.3*T,
+      delay: 6*T,
+      opacity: 0.5,
+      scale: 1.3,
+      translateX: -10,
+      translateY: -10,
+    })
+    .add({
+      targets: '.path3',
+      easing: 'easeInOutQuad',
+      duration: 0.3*T,
+      delay: 0.3*T,
+      opacity: 1,
+      scale: 1,
+      translateX: 0,
+      translateY: 0,
+    });
+
+
+
